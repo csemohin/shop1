@@ -1,0 +1,369 @@
+/* Base CSS */
+@import url('https://fonts.googleapis.com/css?family=Molle:400i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext');
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&subset=latin-ext');
+
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+
+a:focus {
+    outline: 0 solid
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+a:hover {
+    text-decoration: none
+}
+
+.protfolio-bg-1{background-image: url(../img/1.jpg)}
+.protfolio-bg-2{background-image: url(../img/2.jpg)}
+.protfolio-bg-3{background-image: url(../img/3.png)}
+.protfolio-bg-4{background-image: url(../img/4.png)}
+.protfolio-bg-5{background-image: url(../img/5.jpg)}
+.protfolio-bg-6{background-image: url(../img/6.jpg)}
+.protfolio-bg-7{background-image: url(../img/7.jpg)}
+.protfolio-bg-8{background-image: url(../img/8.png)}
+.protfolio-bg-9{background-image: url(../img/9.jpg)}
+.protfolio-bg-10{background-image: url(../img/10.jpg)}
+.protfolio-bg-11{background-image: url(../img/11.jpg)}
+
+.logo a {
+    color: #000;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+    position: relative;
+    display: inline-block;
+}
+
+.logo span {
+    position: absolute;
+    font-size: 10px;
+    right: -12px;
+    top: 10px;
+}
+
+.logo h2 {
+    letter-spacing: 2px;
+
+}
+
+.menu-trigger {
+    width: 30px;
+    display: inline-block;
+}
+
+.menu-trigger span {
+    display: block;
+    height: 2px;
+    background: #333;
+    transition: .2s;
+}
+
+.menu-trigger span:nth-child(2) {
+    margin: 5px 0;
+}
+
+.menu-trigger:hover span:nth-child(1), .menu-trigger:hover span:nth-child(3) {
+    margin: 0 8px;
+}
+
+.menu-trigger {margin: 10px 0 0 0;}
+
+.header-area h2 {margin: 0;}
+
+.header-area {
+    padding: 40px 30px;
+}
+
+.single-protfolio-item {
+    float: left;
+    width: 25%;
+    height: 320px;
+    display: table;
+    background-size: 100%;
+    background-position: center;
+    background-color: #ddd;
+    transition: .5s;
+}
+
+.protfolio-hover {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+}
+
+.protfolio-hover h2 {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.protfolio-hover a {
+    color: #333;
+
+}
+
+.protfolio-hover p {
+    text-transform: uppercase;
+    opacity: .5;
+}
+
+.single-protfolio-item:hover {
+    background-color: #fff;
+}
+
+.single-protfolio-item:hover .protfolio-hover {
+    opacity: 1;
+    visibility: visible;
+}
+
+.single-protfolio-item:hover {
+    background-size: 120%;
+}
+.single-protfolio-item.long-bg {
+    height: 640px;
+}
+
+.single-protfolio-item.boxed-bg {
+    height: 640px;
+    width: 49.9%;
+}
+
+.protfolio-list {
+    overflow: hidden;
+    position: relative;
+}
+
+.footer-area {
+    background-color: #613AD6;
+    padding: 80px 0;
+}
+
+.footer-area a {
+    color: #fff;
+}
+
+.footer-logo {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.footer-logo span {
+    position: absolute;
+    right: -15px;
+    top: 3px;
+    font-size: 10px;
+}
+
+.wizerd-item p a {
+    opacity: .8;
+    margin-bottom: 30px;
+    display: block;
+    font-size: 16px;
+}
+
+.wizerd-item h2 a {
+    position: relative;
+    border-bottom: 1px solid #7857DC;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.wizerd-item h2 a {}
+
+.wizerd-item h2 a:after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: "";
+    width: 0;
+    height: 1px;
+    background: #fff;
+    transition: .3s;
+}
+.wizerd-item h2:hover  a:after{
+    width: 100%;
+}
+.social-link-1 li,.social-link-2 li {
+    list-style: none;
+}
+
+.social-link-1 a,.social-link-2 a {
+    display: block;
+    padding: 5px 0;
+    font-size: 16px;
+    opacity: .8;
+}
+
+.social-link-1 a:hover, .social-link-2 a:hover {
+    opacity: 1;
+}
+.footer-area {
+    position: fixed;
+    bottom: 0;
+    width: 99.888%;
+    z-index: 1;
+}
+
+.protfolio-list {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 292px;
+}
+
+.header-area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+}
+
+.off-canvas-menu {
+    position: fixed;
+    right: -40%;
+    top: 0;
+    height: 100%;
+    width: 40%;
+    background: #fff;
+    z-index: 99;
+    transition: .5s;
+}
+.off-canvas-menu.active{
+    right: 0;
+}
+
+.off-canvas-menu-btoom {
+    position: absolute;
+    bottom: 80px;
+    left: 40px;
+}
+
+.static-text {
+    background-color: #EFEBFF;
+    padding:5px 10px;
+    max-width: 350px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.social-icons a {
+    font-size: 20px;
+    color: #A8A8A8;
+    padding-right: 10px;
+}
+.social-icons a:hover{
+    color: #3946C3;
+}
+
+.off-canvas-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.off-canvas-menu li a {
+    font-size: 30px;
+    color: #100060;
+    margin-left: 40px;
+}
+
+.off-canvas-menu li a:hover {
+    color: #0078D7;
+}
+.menu-table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.menu-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    padding-bottom: 200px;
+}
+.menu-close {
+    position: absolute;
+    right: 0;
+    width: 70px;
+    border-left: 1px solid #ddd;
+    height: 100%;
+    top: 0;
+}
+
+.menu-close i {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    line-height: 40px;
+    margin-top: -20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.off-canvas-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: #ddd;
+    z-index: 3;
+    opacity: 0;
+    visibility: hidden;
+}
+.off-canvas-overlay.active{
+    opacity: .5;
+    visibility: visible;
+}
+
+/*====================================
+===========HEAD ROOM JS===============
+======================================
+*/
+.header-area.headroom--pinned {
+    position: fixed;
+}
